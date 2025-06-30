@@ -1,0 +1,40 @@
+command=$SCRIPT_DIR/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+[wifi]
+full_text=wifi
+command=kitty nmtui
+min_width=25
+align=center
+color=#88C0D0
+
+[volume]
+#full_text=
+full_text=vol
+color=#88C0D0
+command=pavucontrol
+
+[layout]
+command=~/layout/src/xkblayout-state/xkblayout-state print "%s"
+interval=1
+color=#ebcb8b
+
+[time]
+command=date '+ %d.%m.%Y  %H:%M'
+interval=5
+color=#88C0D0
+
+[reboot-btn]
+full_text=⭮
+align=center
+color=#ebcb8b
+command=reboot
+separator=false
+
+[turnoff-btn]
+full_text=⏻
+align=center
+color=#ebcb8b
+command=shutdown now
+separator=false
